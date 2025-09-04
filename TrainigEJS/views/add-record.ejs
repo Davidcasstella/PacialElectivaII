@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./templates/header')%>
+  <body>
+    <div class="container">
+      <header>
+        <!--Menu-->
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h1>Adicionar Registro</h1>
+        </div>
+        <div class="card-body">
+          <form action="/" method="post">
+            <label for="idPc">Id Producto</label>
+            <input type="text" id="idPc" name="idPc"><br>
+
+            <label for="mark">Marca</label>
+            <input type="text" id="mark" name="mark"><br>
+
+            <label for="value">Valor Producto</label>
+            <input type="text" id="value" name="value"><br>
+
+            <label for="state">Estado Producto</label>
+            <input type="text" id="state"
+            name="state">
+            <button type="submit" class="btn btn-warning">Enviar</button>
+          </form>
+        </div>
+        <div class="card-footer">Pie de página</div>
+      </div>
+      <footer><%- include('./templates/footer')%></footer>
+    </div>
+  </body>
+</html>
